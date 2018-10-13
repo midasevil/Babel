@@ -4,7 +4,7 @@
 #   date:                2018/10/13
 #
 
-import  pytest
+import pytest
 
 __author__ = 'midasevil'
 
@@ -32,8 +32,12 @@ class Solution(object):
         l = len(nums)
         for i in range(l):
             if nums[i] in map:
-                return [map[nums[i]],i]
+                return [map[nums[i]], i]
             else:
-                map[target-nums[i]] = i
+                map[target - nums[i]] = i
 
 
+if __name__ == '__main__':
+    s = Solution()
+    assert [0, 2] == s.twoSum_brute([2, 3, 5], 7)
+    assert [0, 2] == s.twoSum_hash([2, 3, 5], 7)

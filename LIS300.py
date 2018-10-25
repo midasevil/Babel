@@ -57,7 +57,3 @@ class Solution_dp:
 
         return max(dp)
 
-
-a = 1
-a += 1
-print(a)

@@ -4,7 +4,6 @@
 #   date:                2018/10/13
 #
 
-import pytest
 
 __author__ = 'midasevil'
 
